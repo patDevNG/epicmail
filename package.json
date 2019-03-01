@@ -1,0 +1,16 @@
+{
+  "name": "epic-p",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "http://https//patDevNG.github.io/epicmail",
+  "description": "",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
