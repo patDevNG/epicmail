@@ -230,7 +230,7 @@
     font-size: 16px;
     line-height: 50px;
     border-radius: 25px;
-    background-color: #f2f2f2;
+    background-color: #e9e7e7;
   }
   
   .chip img {
@@ -289,8 +289,8 @@ div.ks-cboxtags div label{
     display: inline-block;
     background-color: rgba(255, 255, 255, .9);
     border: 2px solid rgba(139, 139, 139, .3);
-    color: #adadad;
-    border-radius: 20%;
+    color: #a5a4a4;
+    border-radius: 25px;
     white-space: nowrap;
     /* margin: 3px 0px; */
     -webkit-touch-callout: none;
@@ -320,16 +320,41 @@ div.ks-cboxtags div label::before {
     content: "\f067";
     transition: transform .3s ease-in-out;
 }
-
 div.ks-cboxtags div input[type="checkbox"]:checked + label::before {
     content: "\f00c";
     transform: rotate(-360deg);
     transition: transform .3s ease-in-out;
 }
+div.ks-cboxtags div#deleteMarked label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f00d";
+    transition: transform .3s ease-in-out;
+}
+div.ks-cboxtags div#deleteMarked input[type="checkbox"]:checked + label::before {
+    content: "\f1f8";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+
 
 div.ks-cboxtags div input[type="checkbox"]:checked + label {
     border: 2px solid #1bdbf8;
     background-color: #12bbd4;
+    color: #fff;
+    transition: all .2s;
+}
+div.ks-cboxtags div#deleteMarked input[type="checkbox"]:checked + label {
+    border: 2px solid #f5442c;
+    background-color: #ff3535;
     color: #fff;
     transition: all .2s;
 }
@@ -343,4 +368,30 @@ div.ks-cboxtags div input[type="checkbox"] {
 }
 div.ks-cboxtags div input[type="checkbox"]:focus + label {
   border: 2px solid #e9a1ff;
+}
+/* list design */
+* {margin: 0; padding: 0;}
+ 
+div #list-style {
+  margin: 5px;
+}
+ 
+#list-style ul {
+  list-style-type: none;
+}
+ 
+#list-style li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+ 
+#list-style li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+#list-style li:hover {
+  background: #dddeee;
+  cursor: pointer;
 }

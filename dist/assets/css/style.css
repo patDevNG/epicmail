@@ -30,7 +30,12 @@ DAEK GREUBLUE #002F2F*/
 }
 
 .bg-light {
-    background-color: #faf7fa;
+    background-color: #fafae2;
+    color: #046380;
+}
+.bg-unread{
+   color: black;
+   background-color: #dbdbd8;
 }
 
 .text-lightest-brown {
@@ -156,7 +161,6 @@ section {
     line-height: 1.5;
     border-radius: .3rem;
 }
-
 /* hoverable class */
 .hoverable:hover {
     background-color: #f0ebeb;
@@ -174,6 +178,9 @@ section {
 .responsive-image {
     vertical-align: middle;
     border-style: none;
+}
+.rounded-img{
+    border-radius: 50%;
 }
 
 /* float classes */
@@ -193,6 +200,9 @@ section {
 
 .text-center {
     text-align: center;
+}
+.text-left {
+    text-align: left;
 }
 /* container class */
 @media (min-width: 768px) {
@@ -299,7 +309,7 @@ section {
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 button,

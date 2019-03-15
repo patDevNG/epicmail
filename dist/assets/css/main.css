@@ -31,6 +31,9 @@ DAEK GREUBLUE #002F2F*/
     color: orange;
 
 }
+.lead-text{
+    text-shadow: 0.5px 1px 1px rgb(84, 126, 126);
+}
 
 .star:checked:before {
     content: "\2606";
@@ -43,13 +46,38 @@ DAEK GREUBLUE #002F2F*/
 }
 
 #indexpage {
-    background: url(../images/envelopes.jpg);
-    background-size: cover;
-    background-position: center;
-    /* box-shadow:inset 0 0 0 2000px rgb(252, 254, 255); */
-    /* color: whitesmoke; */
-    /* min-height: 82vh; */
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     position: relative;
+}
+
+#indexpage::before {
+    background-image: url(../images/envelopes.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+#indexpage::after {
+    background-color: #715a92;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
 }
 
 .overflow-y {
@@ -91,6 +119,12 @@ DAEK GREUBLUE #002F2F*/
     font-size: 0.75rem;
 }
 
+.p-card {
+    position: relative;
+    background-color: #E6E2AF;
+    box-shadow: 1px 2px 3px rgb(80, 79, 79);
+}
+
 main {
     min-height: 100vh;
     width: 100vw;
@@ -101,7 +135,7 @@ main {
 }
 
 nav header {
-    max-height: 20vh;
+    max-height: 10vh;
     /* background-color: #E6E2AF; */
     color: #ffffff;
     background: rgb(4, 99, 128);
@@ -118,15 +152,15 @@ nav header {
     display: table;
 }
 
-.epic-mail {
-    padding: 5px 0px;
+.my-auto h4 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff !important;
 }
 
-.epic-mail h4 a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #ffffff !important;
+.my-auto h4 a:hover {
+    color: #E6E2AF !important;
 }
 
 .logincard {
@@ -140,7 +174,7 @@ nav header {
 }
 
 .logout:hover {
-    color: #ee949c;
+    color: #f83848;
 }
 
 .text-blue a {
@@ -191,12 +225,24 @@ nav header {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.w-47 {
+    width: 47% !important;
+}
+
 /* register css */
 select {
-    text-transform: none;
-    padding: 8px;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #002F2F;
+    background-color: #fff;
+    background-clip: padding-box;
     border: 1px solid #A7A37E;
-    margin-left: 1rem;
+    border-radius: .25rem;
+    transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 /* admidashboard css */
@@ -258,6 +304,20 @@ footer {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+.fixed-btn-edit {
+    color: #046380;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.fixed-btn-delete {
+    color: rgb(207, 3, 13);
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
 }
 
 /* dropdown menu  */
@@ -397,7 +457,7 @@ a[aria-expanded="true"] {
 
 textarea.editor {
     /* width: 600px; */
-	min-height: 200px;
+    min-height: 200px;
     padding: 8px;
     resize: none;
     overflow: auto;
