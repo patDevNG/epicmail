@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Epic Mail</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+    <main class="d-flex flex-column justify-content-between">
+        <nav class="">
+            <header>
+                <div class="w-90 d-flex justify-content-between py-1 ">
+                    <div class="my-auto">
+                        <h1><a href="/index.html" class="header-title">EpicMail</a></h1>
+                    </div>
+                    <!-- <div class="epic-mail d-flex mx-5 mt-1" style="flex-grow:2">
+                                        <input class="input-field form-control" type="text" placeholder="Search..." width="100%">
+                
+                                    </div> -->
+                    <div class=" d-flex justify-content-between my-auto">
+                        <span class="mx-4 my-auto">
+                            Cgrleadership@gmail.com
+                        </span>
+                        <div class="dropdown">
+                            <a href="#" class="mx-4 my-auto"><img class="responsive-img rounded-img" width="40px"
+                                    height="40px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
+                            <div class="dropdown-content">
+                                <a href="./profilepage.html">Profile</a>
+                            </div>
+                        </div>
+                        <a href="#index.html" class="logout ml-4 my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a>
+                    </div>
+
+
+                    <!-- <div class="dropdown">
+                                            <img src="./assets/images/caret-down.svg" class="responsive-img" width="18px" height="18px">
+                                            <div class="dropdown-content">
+                                                <a href="#">Profile</a>
+                                                <a href="#">Log Out</a>
+                                            </div>
+                                        </div> -->
+
+                </div>
+            </header>
+        </nav>
+        <section class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="active">
+                <!-- <a type="button" href="#" id="sidebarCollapse" class="fixed-menu"><img src="./assets/images/menubtn.svg"
+                            width="30px" height="30px"></a> -->
+                <!-- <div class="sidebar-header">
+                        <h3><img src="./assets/images/fullenvelope.svg" width="50px" height="50px" class="responsive-image"></h3>
+                        <strong><img src="./assets/images/fullenvelope.svg" width="40px" height="40px" class="responsive-image"></strong>
+                    </div> -->
+
+                <ul class="list-unstyled components">
+                    <li class="pb-3">
+                        <a href="#" aria-expanded="false" class="container" id="myBtn">
+                            <span class="hide">New Group</span>
+                            <img class="responsive-image mssgicon fn" src="./assets/images/group.svg" width="30px"
+                                height="30px">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="admindashboard.html" aria-expanded="false" class="container">
+                            <span class="hide">Users<small class="red-badge ml-1">5</small></span>
+                            <img class="mssgicon fn responsive-image" src="./assets/images/man-user.svg" width="30px"
+                                height="30px">
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="groups.html" aria-expanded="false" class="container">
+                            <span class="hide">Groups <small class="green-badge ml-1">3</small></span>
+                            <img class="mssgicon fn responsive-image" src="./assets/images/multiple-users-silhouette.svg"
+                                width="30px" height="30px">
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- Page Content  -->
+            <div id="content" class="d-flex">
+                <div id="content-1" class="p-1 overflow-y blue-scrollbar d-flex flex-column justify-content-start"
+                    style="width: 50%; height: 80vh">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="ks-cboxtags">
+                            <div>
+                                <input type="checkbox" id="checkboxOne" value="Rainbow Dash">
+                                <label for="checkboxOne">
+                                    <small>Mark All</small>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="ks-cboxtags">
+                            <div id="deleteMarked">
+                                <input type="checkbox" id="checkboxTwo" value="Delete">
+                                <label for="checkboxTwo">
+                                    <small>Delete Selected</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <table class="p-2" width="100%">
+                            <tr class="d-flex justify-content-between hoverable bg-light p-3" width="100%">
+                                <td class="d-flex">
+                                    <form>
+                                        <div>
+                                            <input type="checkbox" id="index${i}" value="check">
+                                            <label for="index${i}"></label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td class="d-flex">
+                                    <h5>
+                                        <span class="">
+                                            5 members
+                                        </span>
+                                    </h5>
+                                </td>
+                                <td class="d-flex">
+                                    <div>
+                                        <h5 class="message-title">
+                                            Sydney Accord
+                                        </h5>
+                                        <p class="message message-body">
+                                            For Engineers in Australia
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="d-flex">
+                                    <p class="text-center"> 25th Feb, 2019 </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="content-2" class=" overflow-y blue-scrollbar" style="width: 50%; height: 80vh">
+                    <div id="list-style">
+                        <h2 class="text-center">
+                            Sydney Accord Group Members
+                        </h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/11.jpg" />
+                                        <h5>John Doe</h5>
+                                        <p>johndoe@gmail.com</p>
+                                        <small>Date Joined: <span>7th Feburary, 2018</span></small>
+                                    </a>
+                                </div>
+                                <div class="fr">
+                                    <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="15px"
+                                            class="" height="20px" title="delete user from group">
+                                        <!-- <span class="tooltiptext">delete</span> -->
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/women/12.jpg" />
+                                        <h5>Okafor Jude</h5>
+                                        <p>okaforjudechukwuebuka@gmail.com</p>
+                                        <small>Date Joined: <span>27th June, 2018</span></small>
+                                    </a>
+                                </div>
+                                <div class="fr">
+                                    <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="15px"
+                                            class="" height="20px" title="delete user from group">
+                                        <!-- <span class="tooltiptext">delete</span> -->
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/12.jpg" />
+                                        <h5>Okuns Patrick</h5>
+                                        <p>Cgrleadership@gmail.com</p>
+                                        <small>Date Joined: <span>11th January, 2019</span></small>
+                                    </a>
+                                </div>
+                                <div class="fr">
+                                    <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="15px"
+                                            class="" height="20px" title="delete user from group">
+                                        <!-- <span class="tooltiptext">delete</span> -->
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/1.jpg" />
+                                        <h5>Ben Lamudi</h5>
+                                        <p>Lamudi@gmail.com</p>
+                                        <small>Date Joined: <span>7th March, 2019</span></small>
+                                    </a>
+                                </div>
+                                <div class="fr">
+                                    <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="15px"
+                                            class="" height="20px" title="delete user from group">
+                                        <!-- <span class="tooltiptext">delete</span> -->
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#">
+                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/women/89.jpg" />
+                                        <h5>Sandra Jones</h5>
+                                        <p>SandieJay@gmail.com</p>
+                                        <small>Date Joined: <span>21st November, 2018</span></small>
+                                    </a>
+
+                                </div>
+                                <div class="fr">
+                                    <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="15px"
+                                            class="" height="20px" title="delete user from group">
+                                        <!-- <span class="tooltiptext">delete</span> -->
+                                    </a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer class="">
+            <div class="d-flex justify-content-center">
+                <p class="copyright">
+                    Patrick Okuns<i class="fas fa-copyright"></i> 2019
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="./assets/js/epichttp.js"></script>
+    <script src="./assets/js/classes.js"></script>
+    <script src="./assets/js/ui.js"></script>
+    <script src="./assets/js/groups.js"></script>
+</body>
+
+</html>

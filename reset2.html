@@ -29,17 +29,23 @@
             </header>
         </nav>
         <section>
-            <div class="container w-90 d-flex justify-content-center">
-                <div class="card bg-lightest-brown p-4 resetForm">
+            <div class="w-90 d-flex justify-content-center">
+                <div class="card bg-lightest-brown p-4">
                     <form class="text-center">
                         <h2 class="text-center mb-2">
-                            Reset Password
+                            Fill in your new password
                         </h2>
-                        <div class=" form-group">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                        <div class=" form-group my-2">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                         </div>
-                        <a href="reset2.html" class="btn bg-blue mb-4">
-                            Reset Password <i class="fas fa-unlock-alt"></i>
+                        <div class=" form-group my-2">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class=" form-group my-2">
+                            <input type="password" name="cnfPassword" id="cnfPassword" class="form-control" placeholder="Confirm Password">
+                        </div>
+                        <a href="index.html" class="btn bg-blue my-3">
+                            Reset Password <i class="fas fa-lock-open"></i>
                         </a>
                     </form>
                     <small class="">Already a user? <span class="text-blue"><a href="index.html">Sign In</a></span></small>

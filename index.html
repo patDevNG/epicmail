@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Epic Mail</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
@@ -15,20 +15,23 @@
     <main class="d-flex flex-column justify-content-between">
         <nav class="">
             <header>
-                <div class="container w-90 d-flex justify-content-between">
-                    <div class="epic-mail">
+                <div class="w-90 d-flex justify-content-between py-2">
+                    <div class="my-auto">
                         <h1 title="EpicMail"> <a href="/index.html" class="header-title">EpicMail</a></h1>
                     </div>
-                    <div class="epic-mail">
-                        <h4> <a href="register.html" class="">Register Now!</a></h4>
+                    <div class="my-auto">
+                        <h4> <a href="register.html" class="">Register</a></h4>
                     </div>
                 </div>
             </header>
         </nav>
-        <section>
+        <section class="">
             <div class="w-90 d-flex justify-content-between">
                 <div id="test" class="">
-                    <p>Experience Our awesome mail services</p>
+                    <p class="lead-text">Email Service Has Never Been Better<br>
+                        Let's Connect you to the World <br>
+                        Try Epic Mail Today
+                    </p>
                 </div>
                 <div class="card bg-lightest-brown p-3 logincard">
                     <div class="card-body"></div>
@@ -43,19 +46,22 @@
                             <input type="password" class="form-control" name="password" id="loginPassword" placeholder="Password:">
 
                         </div>
-                        <div class="form-group text-center">
-                            <input type="submit" onclick="login()" value="Login" class="btn bg-blue mb-2 " id="loginSubmit">
+                        <div class="form-group fr">
+                            <a href = "userdashboard.html" type="submit" onclick="login()" class="btn bg-blue mb-2 " id="loginSubmit">Login</a>
                         </div>
 
                     </form>
-                    <div class="d-flex justify-content-end">
-                        <small class="">Dont have an acount? <span class="text-blue"><a href="register.html">Sign Up</a></span></small>
+                    <div class="">
+                        <div>
+                            <small class="">Dont have an acount? <span class="text-blue"><a href="register.html">Sign
+                                        Up</a></span></small>
+                        </div>
+                        <div>
+                            <small class="">Forgotten Password? <span class="text-blue"><a href="resetpassword.html">Reset
+                                        it</a></span></small>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="d-flex justify-content-end">
-                        <small class="">Forgotten Password? <span class="text-blue"><a href="resetpassword.html">Reset
-                                    it</a></span></small>
-                    </div>
                 </div>
             </div>
 

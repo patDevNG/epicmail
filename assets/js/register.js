@@ -30,8 +30,6 @@ const regdateOfBirth = document.getElementById('dateOfBirth');
 
 // function to register a user
 register = () => {
-    //  add event listener for submit button on register
-    document.getElementById('registerForm').addEventListener('submit', registerSubmit = (e) => {
         // get form values
         const email = regEmail.value;
         const firstName = regfirstName.value;
@@ -67,8 +65,8 @@ register = () => {
                 .catch(err => console.log(err));
             console.log('its working', register);
         }
-        e.preventDefault();
-    })
+        // e.preventDefault();
+    
 }
 
 /*Validate Functions**/

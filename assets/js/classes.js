@@ -16,3 +16,26 @@ class Register {
         this.dateOfBirth = dateOfBirth;
     }
 }
+class Message {
+    constructor(messageId, message, subject, status, parentMessageId) {
+        this.messageId = messageId;
+        this.message = message;
+        this.subject = subject;
+        this.status = status;
+        this.parentMessageId = parentMessageId;
+    }
+}
+class Inbox {
+    constructor(senderId, receiverId, messageId) {
+        this.senderId = senderId;
+        this.receiverId = receiverId;
+        this.messageId = messageId;
+    }
+}
+class SentMessage {
+    constructor(senderId, receiverId, messageId) {
+        this.senderId = senderId;
+        this.receiverId = receiverId;
+        this.messageId = messageId;
+    }
+}

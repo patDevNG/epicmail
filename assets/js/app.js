@@ -42,32 +42,31 @@ window.onload = () => {
 
 
 /*add event listener for submit button on login*/
+
 login = () => {
-    document.getElementById('loginForm').addEventListener('submit', submitForm = (e) => {
+    // get form values
+    const email = loginEmail.value;
+    const password = loginPassword.value;
+    // instantiate a new login
+    const login = new Login(email, password);
 
-        // get form values
-        const email = loginEmail.value;
-        const password = loginPassword.value;
-        // instantiate a new login
-        const login = new Login(email, password);
+    // validate the fields
+    if (email === "" || password === "") {
+        // error alert
+        ui.showAlert('Please fill in all fields', 'alert danger')
+    } else {
+        //  post user login
+        const loginUrl = "auth/login";
+        http.post(`${baseUrl}${loginUrl}`, login)
+            .then(loginUser => {
+                ui.showAlert('Login Successful', 'alert success');
+                console.log(loginUser);
+            })
+            .catch(err => console.log(err));
+        console.log('its working, login user', login);
+    }
+    // e.preventDefault();
 
-        // validate the fields
-        if (email === "" || password === "") {
-            // error alert
-            ui.showAlert('Please fill in all fields', 'alert danger')
-        } else {
-            //  post user login
-            const loginUrl = "auth/login";
-            http.post(`${baseUrl}${loginUrl}`, login)
-                .then(loginUser => {
-                    ui.showAlert('Login Successful', 'alert success');
-                    console.log(loginUser);
-                })
-                .catch(err => console.log(err));
-            console.log('its working, login user', login);
-        }
-        e.preventDefault();
-    })
 }
 
 // function to validate the email before login

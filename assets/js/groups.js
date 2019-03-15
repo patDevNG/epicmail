@@ -1,4 +1,3 @@
-
 // Get the modal
 window.onload = function () {
     const modal = document.getElementById('myModal');
@@ -24,11 +23,4 @@ window.onload = function () {
             modal.style.display = "none";
         }
     }
-} 
-// instantiate Epichttp library
-const http = new EpicHTTP();
-
-const baseUrl = 'http://localhost:5000/api/v1/';
-
-// instantiate UI
-const ui = new UI();
+}
