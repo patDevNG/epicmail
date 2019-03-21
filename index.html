@@ -15,54 +15,67 @@
     <main class="d-flex flex-column justify-content-between">
         <nav class="">
             <header>
-                <div class="w-90 d-flex justify-content-between py-2">
+                <div class="container-fluid d-flex justify-content-between py-2">
                     <div class="my-auto">
                         <h1 title="EpicMail"> <a href="/index.html" class="header-title">EpicMail</a></h1>
                     </div>
                     <div class="my-auto">
-                        <h4> <a href="register.html" class="">Register</a></h4>
+                        <a class="nav-reg" href="register.html" class="">Register</a>
                     </div>
                 </div>
             </header>
         </nav>
         <section class="">
-            <div class="w-90 d-flex justify-content-between">
-                <div id="test" class="">
-                    <p class="lead-text">Email Service Has Never Been Better<br>
-                        Let's Connect you to the World <br>
-                        Try Epic Mail Today
-                    </p>
-                </div>
-                <div class="card bg-lightest-brown p-3 logincard">
-                    <div class="card-body"></div>
-                    <form id="loginForm">
-                        <h2 class="text-center mb-2">
-                            Login Form
-                        </h2>
-                        <div class=" form-group">
-                            <input type="text" name="email" id="loginEmail" class="form-control" placeholder="Email:">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="password" id="loginPassword" placeholder="Password:">
-
-                        </div>
-                        <div class="form-group fr">
-                            <a href = "userdashboard.html" type="submit" onclick="login()" class="btn bg-blue mb-2 " id="loginSubmit">Login</a>
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div id="test" class="col-6 col-sm-6 col-md-7 col-lg-8">
+                        <div>
+                            <p class="lead-text">Experience Our Awesome Mail Services</p>
                         </div>
 
-                    </form>
-                    <div class="">
-                        <div>
-                            <small class="">Dont have an acount? <span class="text-blue"><a href="register.html">Sign
-                                        Up</a></span></small>
-                        </div>
-                        <div>
-                            <small class="">Forgotten Password? <span class="text-blue"><a href="resetpassword.html">Reset
-                                        it</a></span></small>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-5 col-lg-4">
+                        <div class="col-12">
+                            <div class="card bg-lightest-brown p-2">
+                                <div class="card-body"></div>
+                                <form id="loginForm">
+                                    <h4 class="text-center mb-2">
+                                        Login Form
+                                    </h4>
+                                    <div class="row">
+                                        <div class=" form-group col-12">
+                                            <input type="text" name="email" id="loginEmail" class="form-control"
+                                                placeholder="Email:">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <input type="password" class="form-control" name="password" id="loginPassword"
+                                                placeholder="Password:">
+
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="userdashboard.html" type="submit" onclick="login()" class="btn bg-blue mb-2 fr"
+                                                id="loginSubmit">Login</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="end-text">
+                                    <div>
+                                        <small class="">Dont have an acount? <span class="text-blue"><a href="register.html">Sign
+                                                    Up</a></span></small>
+                                    </div>
+                                    <div>
+                                        <small class="">Forgotten Password? <span class="text-blue"><a href="resetpassword.html">Reset
+                                                    it</a></span></small>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
             </div>
 
 

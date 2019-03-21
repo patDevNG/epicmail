@@ -16,7 +16,7 @@
     <main class="d-flex flex-column justify-content-between">
         <nav class="">
             <header>
-                <div class="w-90 d-flex justify-content-between py-2">
+                <div class="container-fluid d-flex justify-content-between py-2">
                     <div class="my-auto">
                         <h1><a href="/index.html" class="header-title">EpicMail</a></h1>
                     </div>
@@ -24,12 +24,15 @@
                         <input class="input-field form-control" type="text" placeholder="Search..." width="100%">
 
                     </div> -->
-                    <div class=" d-flex justify-content-between my-auto">
-                        <span class="mx-4 my-auto">
+                    <div class="top-bar d-flex justify-content-between my-auto">
+                        <span class="mx-4 my-auto user-email">
                             Cgrleadership@gmail.com
                         </span>
                         <a href="#" class="mx-4 my-auto"><img class="responsive-img rounded-img" width="50px" height="50px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
-                        <a href="#index.html" class="logout ml-4 my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a>
+                        <!-- <a href="#index.html" class="logout ml-4 my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a> -->
+                        <div class="my-auto">
+                            <a class="nav-reg" href="index.html" class="">Logout</a>
+                        </div>
                     </div>
 
                         <!-- <div class="dropdown">
@@ -59,7 +62,7 @@
                                 height="30px">
                         </a>
                     </li>
-                    <li class="active">
+                    <li class="">
                         <a href="userdashboard.html" aria-expanded="false" class="container">
                             <span class="hide">Inbox <small class="red-badge ml-1">5</small> </span>
                             <img class="mssgicon fn responsive-image" src="./assets/images/inbox.svg" width="30px"
@@ -80,7 +83,7 @@
                                 height="30px">
                         </a>
                     </li>
-                    <li class="">
+                    <li class="active">
                         <a href="starred.html" aria-expanded="false" class="container">
                             <span class="hide">Starred</span>
                             <img class="mssgicon fn responsive-image" src="./assets/images/starredmssg.svg" width="30px"
@@ -124,6 +127,18 @@
                                 <label class="onoffswitch-label" for="myonoffswitch"></label>
                             </div>
                         </div> -->
+                        <div class="d-none">
+                            <input type="checkbox" name="markall" id="markall">
+                            <label for="markall">Mark All</label>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="delete" id="delete">
+                            <label for="delete">Delete</label>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="unread" id="unread">
+                            <label for="unread">Unread Only</label>
+                        </div>
                     </div>
                     <div class="wrapper">
                         <table class="p-2" width="100%">
@@ -216,10 +231,10 @@
                             animi aliquam assumenda asperiores, consequuntur voluptate
                             non atque distinctio. Sint.
                         </p>
-                        <div class="w-80 border-brown my-4">
+                        <div class="container-fluid border-brown my-4">
                             <hr>
                         </div>
-                        <div class="w-80 container my-2">
+                        <div class="container-fluid text-center my-2">
                             <p class="black-text">
                                 Click here to <a href="#"><span class="text-light-brown">reply</span></a> or <a href="#"><span
                                         class="text-light-brown">forward</span></a>

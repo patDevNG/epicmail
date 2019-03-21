@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Epic Mail</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
@@ -16,7 +16,7 @@
     <main class="d-flex flex-column justify-content-between">
         <nav class="">
             <header>
-                <div class="w-90 d-flex justify-content-between py-1">
+                <div class="container-fluid d-flex justify-content-between py-1">
                     <div class="my-auto">
                         <h1><a href="/index.html" class="header-title">EpicMail</a></h1>
                     </div>
@@ -24,22 +24,26 @@
                         <input class="input-field form-control" type="text" placeholder="Search..." width="100%">
 
                     </div> -->
-                    <div class=" d-flex justify-content-between my-auto">
-                        <span class="mx-4 my-auto">
-                        
+                    <div class="top-bar d-flex justify-content-between my-auto">
+                        <span class="mx-4 my-auto user-email">
+                            Cgrleadership@gmail.com
                         </span>
-                        <a href="#" class="mx-4 my-auto"><img class="responsive-img rounded-img" width="30px" height="30px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
-                        <a href="#index.html" class="logout ml-4 my-auto">Logout</a>
+                        <a href="#" class="mx-4 my-auto"><img class="responsive-img rounded-img" width="40px"
+                                height="40px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
+                        <!-- <a href="#index.html" class="logout my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a> -->
+                        <div class="my-auto">
+                            <a class="nav-reg" href="index.html" class="">Logout</a>
+                        </div>
                     </div>
 
-                        <!-- <div class="dropdown">
+                    <!-- <div class="dropdown">
                             <img src="./assets/images/caret-down.svg" class="responsive-img" width="18px" height="18px">
                             <div class="dropdown-content">
                                 <a href="#">Profile</a>
                                 <a href="#">Log Out</a>
                             </div>
                         </div> -->
-                    
+
                 </div>
             </header>
         </nav>
@@ -110,19 +114,32 @@
                             </div>
                         </div>
                         <div class="ks-cboxtags">
-                                <div id="deleteMarked">
-                                    <input type="checkbox" id="checkboxTwo" value="Delete">
-                                    <label for="checkboxTwo">
-                                        <small>Delete Selected</small>
-                                    </label>
-                                </div>
+                            <div id="deleteMarked">
+                                <input type="checkbox" id="checkboxTwo" value="Delete">
+                                <label for="checkboxTwo">
+                                    <small>Delete Selected</small>
+                                </label>
                             </div>
+                        </div>
                         <div class="fr d-inline">
-                            <small class="d-inline">Show Unread Only</small>
+                            <small class="d-inline">Unread Only</small>
                             <div class="onoffswitch">
-                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
+                                    id="myonoffswitch">
                                 <label class="onoffswitch-label" for="myonoffswitch"></label>
                             </div>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="markall" id="markall">
+                            <label for="markall">Mark All</label>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="delete" id="delete">
+                            <label for="delete">Delete</label>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="unread" id="unread">
+                            <label for="unread">Unread Only</label>
                         </div>
                     </div>
                     <div class="wrapper">
@@ -167,37 +184,37 @@
                 </div>
                 <div id="content-2" class="p-2 mx-auto overflow-y blue-scrollbar" style="width: 50%; height: 80vh">
                     <div class="d-flex justify-content-between">
-                        <div class="">
-                            <a href="#" class="tooltip"><img src="./assets/images/boss.svg" width="25px" class="mx-1"
-                                    height="25px">
+                        <div class="content-top">
+                            <a href="#" class="tooltip"><img src="https://randomuser.me/api/portraits/men/54.jpg"
+                                    width="30px" class="mx-1 responsive-image rounded-img" height="30px">
                             </a>
                             <span> <label> from:</label> <small class="sender-name">Jude Okafor</small></span>
 
                         </div>
-                        <div class="d-flex justify-content-around">
+                        <div class="d-flex justify-content-around content-top-2">
                             <div>
-                                <a href="#" class="tooltip"><img src="./assets/images/reply.svg" width="20px" class="mx-2"
-                                        height="20px" title="reply">
+                                <a href="#" class="tooltip"><img src="./assets/images/reply.svg" width="20px"
+                                        class="mx-2" height="20px" title="reply">
                                     <!-- <span class="tooltiptext">Reply</span> -->
                                 </a>
                             </div>
                             <div>
-                                <a href="#" class="tooltip"><img src="./assets/images/forward.svg" width="20px" class="mx-2"
-                                        height="20px" title="forward">
+                                <a href="#" class="tooltip"><img src="./assets/images/forward.svg" width="20px"
+                                        class="mx-2" height="20px" title="forward">
                                     <!-- <span class="tooltiptext">forward</span> -->
                                 </a>
                             </div>
                             <div>
-                                <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="20px" class="mx-2"
-                                        height="20px" title="delete">
+                                <a href="#" class="tooltip"><img src="./assets/images/dustbin.svg" width="20px"
+                                        class="mx-2" height="20px" title="delete">
                                     <!-- <span class="tooltiptext">delete</span> -->
                                 </a>
                             </div>
 
                         </div>
                     </div>
-                    <div class="mails ">
-                        <h3 class="message-title d-inline mt-2">Project Epic Mail Feedback</h3>
+                    <div class="mails">
+                        <h4 class="message-title d-inline mt-2">Project Epic Mail Feedback</h4>
                         <span class="fr d-inline">
                             <small>
                                 <strong>
@@ -215,23 +232,14 @@
                             animi aliquam assumenda asperiores, consequuntur voluptate
                             non atque distinctio. Sint.
                         </p>
-                        <p class="message p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil
-                            dolorum a
-                            quasi ipsa
-                            blanditiis quibusdam sequi asperiores, officiis perspiciatis. Tempore quaerat, quas id
-                            quia possimus cumque unde,
-                            maxime mollitia, atque autem minus accusamus! Ad, at doloremque!
-                            Quis perspiciatis voluptatibus aspernatur ea nostrum,
-                            animi aliquam assumenda asperiores, consequuntur voluptate
-                            non atque distinctio. Sint.
-                        </p>
-                        <div class="w-80 border-brown my-4">
+
+                        <div class="container-fluid border-brown my-4">
                             <hr>
                         </div>
-                        <div class="w-80 container my-2">
+                        <div class="container-fluid text-center my-2">
                             <p class="black-text">
-                                Click here to <a href="#"><span class="text-light-brown">reply</span></a> or <a href="#"><span
-                                        class="text-light-brown">forward</span></a>
+                                Click here to <a href="#"><span class="text-light-brown">reply</span></a> or <a
+                                    href="#"><span class="text-light-brown">forward</span></a>
                                 this message
                             </p>
 
@@ -268,11 +276,13 @@
                             <input type="text" name="to" id="to" class="form-control">
                         </div>
                         <div class=" form-group">
-                            <label for="subject">Subject: <i class="fa fa-address-card-o" aria-hidden="true"></i></label>
+                            <label for="subject">Subject: <i class="fa fa-address-card-o"
+                                    aria-hidden="true"></i></label>
                             <input type="text" name="subject" id="subject" class="form-control">
                         </div>
                         <div class="form-group">
-                            <textarea name="editor" id="editor" class="editor form-control" placeholder="Message here...">
+                            <textarea name="editor" id="editor" class="editor form-control"
+                                placeholder="Message here...">
                              </textarea>
                         </div>
                         <div class="d-flex justify-content-between">

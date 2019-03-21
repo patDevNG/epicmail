@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Epic Mail</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
@@ -16,7 +16,7 @@
     <main class="d-flex flex-column justify-content-between">
         <nav class="">
             <header>
-                <div class="w-90 d-flex justify-content-between py-1 ">
+                <div class="container-fluid d-flex justify-content-between py-1 ">
                     <div class="my-auto">
                         <h1><a href="/index.html" class="header-title">EpicMail</a></h1>
                     </div>
@@ -24,18 +24,23 @@
                                         <input class="input-field form-control" type="text" placeholder="Search..." width="100%">
                 
                                     </div> -->
-                    <div class=" d-flex justify-content-between my-auto">
-                        <span class="mx-4 my-auto">
+                    <div class="top-bar d-flex justify-content-between my-auto">
+                        <span class="mx-4 my-auto user-email">
                             Cgrleadership@gmail.com
                         </span>
-                        <div class="dropdown">
+                        <a href="./profilepage.html" class="mx-4 my-auto"><img class="responsive-img rounded-img"
+                                width="40px" height="40px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
+                        <!-- <div class="dropdown">
                             <a href="#" class="mx-4 my-auto"><img class="responsive-img rounded-img" width="40px"
                                     height="40px" src="https://randomuser.me/api/portraits/men/89.jpg" /></a>
                             <div class="dropdown-content">
                                 <a href="./profilepage.html">Profile</a>
                             </div>
+                        </div> -->
+                        <!-- <a href="#index.html" class="logout ml-4 my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a> -->
+                        <div class="my-auto">
+                            <a class="nav-reg" href="index.html" class="">Logout</a>
                         </div>
-                        <a href="#index.html" class="logout ml-4 my-auto"><i class="fas fa-2x fa-sign-out-alt"></i></a>
                     </div>
 
 
@@ -78,8 +83,8 @@
                     <li class="active">
                         <a href="groups.html" aria-expanded="false" class="container">
                             <span class="hide">Groups <small class="green-badge ml-1">3</small></span>
-                            <img class="mssgicon fn responsive-image" src="./assets/images/multiple-users-silhouette.svg"
-                                width="30px" height="30px">
+                            <img class="mssgicon fn responsive-image"
+                                src="./assets/images/multiple-users-silhouette.svg" width="30px" height="30px">
                         </a>
                     </li>
                 </ul>
@@ -105,6 +110,14 @@
                                     <small>Delete Selected</small>
                                 </label>
                             </div>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="markall" id="markall">
+                            <label for="markall">Mark All</label>
+                        </div>
+                        <div class="d-none">
+                            <input type="checkbox" name="delete" id="delete">
+                            <label for="delete">Delete</label>
                         </div>
                     </div>
                     <div class="wrapper">
@@ -151,7 +164,8 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/11.jpg" />
+                                        <img class="responsive-img rounded-img" width="65px" height="65px"
+                                            src="https://randomuser.me/api/portraits/men/11.jpg" />
                                         <h5>John Doe</h5>
                                         <p>johndoe@gmail.com</p>
                                         <small>Date Joined: <span>7th Feburary, 2018</span></small>
@@ -165,12 +179,12 @@
                                 </div>
                             </li>
                             <li>
-                            <li>
                                 <div>
                                     <a href="#">
-                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/women/12.jpg" />
+                                        <img class="responsive-img rounded-img" width="65px" height="65px"
+                                            src="https://randomuser.me/api/portraits/women/12.jpg" />
                                         <h5>Okafor Jude</h5>
-                                        <p>okaforjudechukwuebuka@gmail.com</p>
+                                        <p>godwinjudeee@gmail.com</p>
                                         <small>Date Joined: <span>27th June, 2018</span></small>
                                     </a>
                                 </div>
@@ -184,7 +198,8 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/12.jpg" />
+                                        <img class="responsive-img rounded-img" width="65px" height="65px"
+                                            src="https://randomuser.me/api/portraits/men/12.jpg" />
                                         <h5>Okuns Patrick</h5>
                                         <p>Cgrleadership@gmail.com</p>
                                         <small>Date Joined: <span>11th January, 2019</span></small>
@@ -200,7 +215,8 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/men/1.jpg" />
+                                        <img class="responsive-img rounded-img" width="65px" height="65px"
+                                            src="https://randomuser.me/api/portraits/men/1.jpg" />
                                         <h5>Ben Lamudi</h5>
                                         <p>Lamudi@gmail.com</p>
                                         <small>Date Joined: <span>7th March, 2019</span></small>
@@ -216,7 +232,8 @@
                             <li>
                                 <div>
                                     <a href="#">
-                                        <img class="responsive-img rounded-img" width="65px" height="65px" src="https://randomuser.me/api/portraits/women/89.jpg" />
+                                        <img class="responsive-img rounded-img" width="65px" height="65px"
+                                            src="https://randomuser.me/api/portraits/women/89.jpg" />
                                         <h5>Sandra Jones</h5>
                                         <p>SandieJay@gmail.com</p>
                                         <small>Date Joined: <span>21st November, 2018</span></small>
